@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salesi Morello</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Salesi Morello</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myweb.html">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tableau-skills">Tableau Skills</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main “About” Section -->
+  <main class="container py-5">
+    <section class="text-center mb-4">
+      <h1 class="display-4">Salesi Morello</h1>
+
+      <!-- You can add real address/phone/email here or keep it minimal -->
+      <p class="lead mb-1">
+        Provo, Utah · Brigham Young University
+      </p>
+      <p class="text-muted">
+        <a href="mailto:youremail@byu.edu">salesi23@byu.edu</a>
+      </p>
+
+      <p class="mt-4">
+        I am a Brigham Young University student interested in business and economics. I am a junior looking to start my career in financial services.
+      </p>
+
+      <hr class="my-4" />
+
+      <p class="h5 mb-3">Resume Link</p>
+      <a href="resume.html" class="btn btn-primary btn-lg">View My Resume</a>
+    </section>
+
+    <!-- Tableau Skills Section -->
+    <section id="tableau-skills" class="mt-5">
+      <h2 class="mb-3">Tableau Skills</h2>
+      <p>
+        I use Tableau to explore and present data in a clear, visual way.
+        I have experience creating dashboards, trend analyses, and visual
+        summaries to support decision-making.
+      </p>
+
+      <!-- Replace the image src with your own screenshot if you want -->
+      <!-- Tableau Visualization: Salary Expectations for Different Majors -->
+<div class="tableauContainer" style="max-width: 1000px; margin: 40px auto;">
+    <h2 style="text-align: center; margin-bottom: 20px; font-family: Arial, sans-serif;">
+        Salary Expectations for Different Majors
+    </h2>
+
+    <div class='tableauPlaceholder' id='viz1765918866700' style='position: relative; width: 100%;'>
+        <noscript>
+            <a href='#'>
+                <img alt='Salary Expectations for Different Majors'
+                    src='https://public.tableau.com/static/images/Sa/SalaryExpectationsfoDifferentMajors/Sheet1/1_rss.png'
+                    style='border: none;' />
+            </a>
+        </noscript>
+
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='SalaryExpectationsfoDifferentMajors/Sheet1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Sa/SalaryExpectationsfoDifferentMajors/Sheet1/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1765918866700');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.70) + 'px'; // Adjust height ratio here
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</div>
+
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light py-3 mt-5">
+    <div class="container text-center">
+      <small>&copy; <span id="year"></span> Salesi Morello</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script>
+    // simple current-year script
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
